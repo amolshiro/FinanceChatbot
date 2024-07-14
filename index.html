@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankBot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <header>BankBot</header>
+        <div id="chat-area"></div>
+        <div class="input-area">
+            <input type="number" id="user-age" placeholder="Enter your age">
+            <input type="text" id="user-input" placeholder="Ask your finance question...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <footer>
+        Prototype made for the Intern Innovation Challenge 
+    </footer>
+    <script src="{{ url_for('static', filename='chat.js') }}"></script>
+</body>
+</html>
